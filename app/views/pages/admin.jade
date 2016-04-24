@@ -1,0 +1,61 @@
+extends ../layout
+
+block content
+	script(type="text/javascript",charset="utf-8",src="/ueditor/ueditor.config.js")
+	script(type="text/javascript",charset="utf-8",src="/ueditor/ueditor.all.min.js")
+	script(type="text/javascript",charset="utf-8",src="/ueditor/lang/zh-cn/zh-cn.js")
+	.container
+		.row
+			form.form-horizontal(method="post", action="/admin/article")
+				input(type="hidden", name="article[_id]", value="#{article._id}")
+				input(type="hidden", name="article[labels]", id="hiddenLabels" value="")
+				.form-group
+					label.col-sm-2.control-label(for="inputTitle") 标题
+					.col-sm-10
+						input#inputTitle.form-control(type="text", name="article[title]", value="#{article.title}")
+				.form-group
+					label.col-sm-2.control-label(for="inputIntroduce") 简介
+					.col-sm-10
+						input#inputIntroduce.form-control(type="text", name="article[introduce]", value="#{article.introduce}")
+				.form-group
+					label.col-sm-2.control-label(for="inputLabel") 已添加标签
+					.col-sm-10#articleLabelBox
+						each label in article.labels
+							span.label.label-info.articleLabel #{label}
+								i.glyphicon.glyphicon-remove
+				.form-group
+					label.col-sm-2.control-label 可选标签
+					.col-sm-10
+						span.label.label-info.commonLabel 技术
+						span.label.label-info.commonLabel Nodejs
+						span.label.label-info.commonLabel 旅行
+						span.label.label-info.commonLabel 生活
+						span.label.label-info.commonLabel 电影
+						span.label.label-info.commonLabel 音乐
+						span.label.label-info.commonLabel 心情
+						span.label.label-info.commonLabel 翻译
+						span.label.label-info.commonLabel 分享
+						span.label.label-info.commonLabel 健康
+				.form-group
+					.col-sm-offset-2.col-sm-10
+						.checkbox
+							label
+								if article.recommend
+									input#inputContent(type="checkbox",name="article[recommend]",checked="checked")
+								else
+									input#inputContent(type="checkbox",name="article[recommend]")
+								= "推荐到首页"
+				//- .form-group
+					label.col-sm-2.control-label(for="inputContent") 内容
+					.col-sm-10
+						input#inputContent.form-control(type="text", name="article[content]", value="#{article.content}")
+				.form-group
+					label.col-sm-2.control-label(for="inputContent") 内容
+					.col-sm-10
+						script#editor(type="text/plain",style="width:100%;height:500px;",name="article[content]") !{article.content}
+						script.
+							var ue =UE.getEditor('editor')
+						.form-group
+							.col-sm-offset-2.col-sm-10
+							button.btn.btn-default(type="submit",style="margin-top:10px;") 录入
+	script(src="/js/adminForm.js")

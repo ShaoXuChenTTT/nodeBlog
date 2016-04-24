@@ -1,0 +1,356 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"movie",
+				"movieObj"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"wi",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "Package Control: install",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 617.0,
+		"history":
+		[
+			"12",
+			"1",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/sxc/Documents/myCode/imooc/app/controllers/movie.js",
+		"/Users/sxc/Documents/myCode/imooc/public/js/detail.js",
+		"/Users/sxc/Documents/myCode/imooc/app/views/includes/header.jade",
+		"/Users/sxc/Documents/myCode/imooc/app/views/pages/detail.jade",
+		"/Users/sxc/Documents/myCode/imooc/app/controllers/user.js",
+		"/Users/sxc/Documents/myCode/imooc/app/models/comment.js",
+		"/Users/sxc/Documents/myCode/imooc/app/controllers/comment.js",
+		"/Users/sxc/Documents/myCode/imooc/app/views/pages/admin.jade",
+		"/Users/sxc/Documents/myCode/imooc/config/routes.js",
+		"/Users/sxc/Documents/myCode/imooc/app/schemas/comment.js",
+		"/Users/sxc/Documents/myCode/imooc/app.js",
+		"/Users/sxc/Documents/myCode/imooc/app/schemas/movie.js",
+		"/Users/sxc/Documents/myCode/imooc/app/models/movie.js",
+		"/Users/sxc/Documents/myCode/imooc/app/schemas/user.js",
+		"/Users/sxc/Documents/myCode/imooc/app/views/pages/signin.jade",
+		"/Users/sxc/Documents/myCode/imooc/app/views/pages/signup.jade",
+		"/Users/sxc/Documents/myCode/imooc/public/js/admin.js",
+		"/Users/sxc/Documents/myCode/imooc/app/controllers/index.js",
+		"/Users/sxc/Documents/myCode/imooc/schemas/user.js",
+		"/Users/sxc/Documents/myCode/imooc/schemas/movie.js",
+		"/Users/sxc/Documents/myCode/imooc/views/pages/list.jade",
+		"/Users/sxc/Documents/myCode/imooc/views/includes/header.jade",
+		"/Users/sxc/Documents/myCode/imooc/views/pages/userlist.jade",
+		"/Users/sxc/Documents/myCode/imooc/views/pages/index.jade",
+		"/Users/sxc/Documents/myCode/imooc/models/movie.js",
+		"/Users/sxc/Documents/myCode/imooc/package.json",
+		"/Users/sxc/Documents/myCode/imooc/models/user.js",
+		"/Users/sxc/Documents/myCode/imooc/views/includes/head.jade",
+		"/Users/sxc/Documents/myCode/imooc/gruntfile.js",
+		"/Users/sxc/Documents/myCode/imooc/views/layout.jade",
+		"/Users/sxc/Documents/myCode/imooc/views/pages/detail.jade",
+		"/Users/sxc/Documents/myCode/imooc/views/pages/admin.jade",
+		"/Users/sxc/Documents/myCode/imooc/.bowerrc",
+		"/Users/sxc/Documents/myCode/imooc/bower.json",
+		"/Users/sxc/Documents/myCode/imooc/public/js/admin.j",
+		"/Users/sxc/Documents/myCode/imooc/views/index.jade",
+		"/Users/sxc/Documents/myCode/imooc/views/detail.jade",
+		"/Users/sxc/Documents/myCode/imooc/views/list.jade",
+		"/Users/sxc/Documents/myCode/imooc/views/admin.jade",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-war/src/main/resources/config/config.properties",
+		"/Users/sxc/Downloads/mhealth-web-config.properties",
+		"/private/etc/hosts",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/expert/v2015/consult_ask.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/expert/v2015/consult_ask_tel.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/activity/teacher_index.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/comment/expert/comment_detail_info.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/expert/expert_consult_video.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/my/beforeconsult/before_consult_ask.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/expert/expert_consult_phone.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/expert/expert_index.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/expert/expert_consult_imagetext.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/txhealth/expert-index.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/expert/expert_info.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/expert/expert_helian.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/my/beforeconsult/phone_consult_ask.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/lottery/wyly/game.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views/promotion/heart/home.ftl",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/portal/jsdev/base/GH.js",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/widgets/footerJs.ftl",
+		"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/widgets/footerJs.ftl",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/portal/jsdev/modules/home.js",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/common/select_area.ftl",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/node_modules/gulp-eslint/node_modules/eslint/node_modules/inquirer/lib/utils/events.js",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/gops/compile/node_modules/grunt/lib/grunt/event.js",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/eteam/eteam_apply.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/eteam/team_intro.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/my/consult/qkconsult.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/expert/fastOrder.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/eteam/we_home.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/common/new_common_nav.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/areahospital/shanghai/hospitalinfo.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/dzyy/dzyy_eteam_order.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/dzyy/dzyy_quick_order.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/dzyy/dzyy_auto_order.ftl",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/portal/less/eteam.less",
+		"/Users/sxc/Downloads/eclipse2/configuration/config.ini",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/eteam/team_intro_new.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views/dzyy/dzyy_success.ftl",
+		"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/widgets/headerTeam.ftl",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/portal/jsdev/modules/account.js",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/h5/jsdev/order.js",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/h5/less/common.less",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/h5/jsdev/common.js",
+		"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/fraid/app/js/server.js",
+		"/Users/sxc/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/sxc/Documents/svn/mhealth/web/mhealth-web/m-health-web/deploy/templates/home/views",
+			"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views",
+			"/Users/sxc/Documents/svn/portal",
+			"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views",
+			"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates",
+			"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views",
+			"/Users/sxc/Documents/svn/portal/weiyi-portal-web/weiyi-portal-web-deploy/templates/home/views",
+			"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/portal/jsdev",
+			"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views",
+			"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/portal/less",
+			"/Users/sxc/Documents/svn/portal/web/guahao-portal-web-deploy/templates/home/views",
+			"/Users/sxc/Documents/svn/static/20160322_activity_heart_shaoxc_dev/src/main/webapp/h5/less"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"crate",
+			"添加项目信息",
+			"id=\"callIn\"",
+			"return _smartlog",
+			"class=\"gp-consult-tel gp-consult-v3 J_ConsultTel\"",
+			"module-payment-confirm",
+			"detail-wrap",
+			"gp-pay",
+			"order-summary",
+			"payment-container",
+			"grid-section g-consult-form J_ConsultImgTxt",
+			"box jj-box",
+			"actions col3 J_Actions GJ_BotFixed",
+			"id=\"J_PhoneConsultSubmit\"",
+			"电话问诊</a>",
+			"return _smartlog",
+			"/my/bconsult/todoctor",
+			"ipGeo:",
+			"J_Area",
+			"city J_City",
+			"/dzyy",
+			"dzyy?",
+			"病情详情模板",
+			"精准预约申请",
+			"j z y y",
+			"gp-dzyy-auto",
+			"bg-0",
+			"consult-content gfm-inline",
+			"bu l r",
+			"blur",
+			"g-btn-padding",
+			"g-fix-fixed",
+			"J_DoBuild",
+			"192.168.221.75",
+			"remember_",
+			"remember_open"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "nodeBlog.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tiemadd",
+				"m-health-web/deploy/templates/home/views/serviceItem/serviceItemAdd.ftl"
+			],
+			[
+				"pro",
+				"m-health-web/deploy/templates/home/views/order/phoneorder/provisional/provisionalAdd.ftl"
+			],
+			[
+				"event.js",
+				"20160322_activity_heart_shaoxc_dev/src/main/webapp/node_modules/gulp-eslint/node_modules/eslint/node_modules/inquirer/lib/utils/events.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

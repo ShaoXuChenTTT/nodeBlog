@@ -1,0 +1,25 @@
+{
+  "name": "nodeBlog",
+  "description": "0.0.1",
+  "main": "",
+  "keywords": [
+    "blog"
+  ],
+  "authors": [
+    "tangzy"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

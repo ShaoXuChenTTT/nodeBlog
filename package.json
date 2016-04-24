@@ -1,0 +1,35 @@
+{
+  "name": "nodeBlog",
+  "version": "1.0.0",
+  "description": "tzy's nodeBlog",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.15.0",
+    "connect-mongo": "^1.1.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "formidable": "^1.0.17",
+    "jade": "^1.11.0",
+    "moment": "^2.12.0",
+    "mongoose": "^4.4.10",
+    "morgan": "^1.7.0",
+    "ueditor": "^1.1.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "Nodejs"
+  ],
+  "author": "tangzy",
+  "license": "ISC"
+}
