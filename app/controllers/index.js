@@ -14,6 +14,9 @@ exports.index = function(req, res) {
 			console.log(err)
 		}
 		var pageCount = parseInt((articles.length-1)/pageSize + 1)
+		if (pageCount == 0) {
+			pageCount = 1
+		}
 		if(pageNum > pageCount){
 			res.redirect('/')
 		}
