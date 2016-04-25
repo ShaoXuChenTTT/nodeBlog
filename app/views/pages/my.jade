@@ -7,11 +7,11 @@ block content
 				if user.headImg
 					img#headImg(src="#{user.headImg}" style="width: 90px;height: 120px;margin: 10px auto;")
 				else 
-					img#headImg(src="/img/unkonw.png" style="width: 90px;height: 120px;margin: 10px auto;")
+					img#headImg(src="/img/unknow.png" style="width: 90px;height: 120px;margin: 10px auto;")
 				button.btn.btn-primary.btn-fileUpload(type="button")
 					<input type="file" name="fileToUpload" id="fileToUpload" class="fileupload" />
 					p 换个头像
-				.info 用户名: sxc
+				.info 用户名: #{user.name}
 			.col-md-10
 				h2 我的评论
 				each item in comments
