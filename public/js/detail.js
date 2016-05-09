@@ -27,4 +27,23 @@ $(function() {
 			}).appendTo('#commentForm')	
 		}	
 	})
+
+	$('.delete').click(function(e) {
+		var target = $(this)
+		var toId = target.data('tid')
+		var commentId = target.data('cid')
+		var comment = $(this).parents(".media")
+		$.ajax({
+			type: 'DELETE',
+			url: '/user/comment?id=' + commentId
+		})
+		.done(function(results) {
+			if (results.status === 1) {
+				if (comment.length > 0) {
+					comment.remove()
+					alert("删除成功")
+				}
+			}
+		})
+	})
 })

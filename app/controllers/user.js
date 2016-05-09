@@ -22,7 +22,8 @@ exports.signup = function(req, res){
 		}
 
 		if(user) {
-			return res.redirect('/signin')
+			// return res.redirect('/signin')
+			res.json({status: 0, code: "FAILED", message: "user already exists", errorCode: "E_1001"})
 		}
 		else {
 			var user = new User(_user)
@@ -30,8 +31,8 @@ exports.signup = function(req, res){
 				if (err){
 					console.log(err)
 				}
-
-				res.redirect('/')
+				res.json({status: 1, code: "OK"})
+				// res.redirect('/')
 			})
 		}
 	})
@@ -50,7 +51,8 @@ exports.signin = function(req ,res) {
 		}
 
 		if(!user) {
-			return res.redirect('/signup')
+			res.json({status: 0, code: "FAILED", message: "user not exists", errorCode: "E_1002"})
+			// return res.redirect('/signup')
 		}
 
 		user.comparePassword(password, function(err, isMatch) {
@@ -60,10 +62,11 @@ exports.signin = function(req ,res) {
 
 			if (isMatch) {
 				req.session.user = user
-				return res.redirect('/')
+				res.json({status: 1, code: "OK"})
 			}
 			else {
-				return res.redirect('/signin')
+				res.json({status: 0, code: "FAILED", message: "user or password does not match", errorCode: "E_1003"})
+				// return res.redirect('/signin')
 			}
 		})
 	})

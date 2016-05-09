@@ -75,13 +75,19 @@ exports.save = function(req, res) {
 	var id = req.body.article._id
 	var articleObj = req.body.article
 	var _article
-
+	console.log(articleObj)
 	if (id !== 'undefined') {
 		Article.findById(id, function(err, article) {
 			if (err) {
 				console.log(err)
 			}
-
+			articleObj.labels = articleObj.labels.split(',')
+			if(articleObj.recommend) {
+				articleObj.recommend = true
+			}
+			else {
+				articleObj.recommend = false
+			}
 			_article = _.extend(article, articleObj)
 			_article.save(function(err, article){
 				if(err) {

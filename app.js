@@ -58,7 +58,7 @@ if ('development' === app.get('env')) {
 require('./config/routes')(app)
 
 app.locals.moment = require('moment')
-app.locals.mainTitle = "兔小站"
+app.locals.mainTitle = "邵旭晨"
 app.listen(port)
 
 console.log('nodeBlog started on port ' + port)

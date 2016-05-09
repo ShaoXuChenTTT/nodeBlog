@@ -38,4 +38,18 @@ exports.save = function(req, res) {
 	}
 	
 }
+// delete comment 
+exports.del = function(req, res) {
+	var id = req.query.id
 
+	if (id) {
+		Comment.remove({_id: id}, function(err, comment){
+			if (err) {
+				console.log(err)
+			}
+			else {
+				res.json({status: 1, code: "OK"})
+			}
+		})
+	}
+}

@@ -3,14 +3,14 @@
 		.page-header
 			a(href="/")
 				h1.text-primary= mainTitle
-			small 兔子的博客
+			small 邵旭晨的博客
 			if (user && user.role > 0)
 				a.btn.btn-info.write-article(href="/admin/article/new") 写文章
 				a.btn.btn-info.manage-article(href="/admin/article/list") 文章管理
 .navbar.navbar-default.navbar-fixed-bottom
 	.container
 		.navbar-header
-			a.navbar-brand(href="/") 兔子的博客
+			a.navbar-brand(href="/") 邵旭晨的博客
 		if user
 			p.navbar-text.navbar-right
 				span 欢迎您,#{user.name}
@@ -26,7 +26,7 @@
 #signupModal.modal.fade
 	.modal-dialog
 		.modal-content
-			form(method="POST", action="/user/signup")
+			form
 				.modal-header 注册
 				.modal-body
 					.form-group
@@ -37,11 +37,11 @@
 						input#signupPassword.form-control(name="user[password]", type="text")
 				.modal-footer
 					button.btn.btn-defalut(type="button", data-dismiss="modal") 关闭
-					button.btn.btn-success(type="submit") 提交 
+					button.btn.btn-success#signupBtn(type="button") 提交 
 #signinModal.modal.fade
 	.modal-dialog
 		.modal-content
-			form(method="POST", action="/user/signin")
+			form
 				.modal-header 登陆
 				.modal-body
 					.form-group
@@ -52,4 +52,5 @@
 						input#signinPassword.form-control(name="user[password]", type="text")
 				.modal-footer
 					button.btn.btn-defalut(type="button", data-dismiss="modal") 关闭
-					button.btn.btn-success(type="submit") 提交 
+					button.btn.btn-success#signinBtn(type="button") 提交 
+script(src="/js/user.js")

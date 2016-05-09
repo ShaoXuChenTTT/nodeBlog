@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "bcrypt": "^0.8.5",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.0",
     "connect-mongo": "^1.1.0",
     "cookie-parser": "^1.4.1",

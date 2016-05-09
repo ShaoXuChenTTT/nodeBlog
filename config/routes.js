@@ -39,4 +39,5 @@ module.exports = function(app) {
 
 	//Comment
 	app.post('/user/comment', User.signinRequired, Comment.save)
+	app.delete('/user/comment', User.signinRequired, User.adminRequired, Comment.del)
 }
