@@ -21,7 +21,7 @@ block content
 											img.media-object(src="/img/unknow.png",style="width: 64px;height:64px;")
 									.media-body
 										h4.media-heading #{item.from.name}
-											if user.role > 0
+											if user && user.role > 0
 												a.deleteBtn.delete(data-cid="#{item._id}") 删除
 										p #{item.content}
 											a.replyButton.comment(href="#commentTextarea", data-cid="#{item._id}", data-tid="#{item.from._id}") 回复
