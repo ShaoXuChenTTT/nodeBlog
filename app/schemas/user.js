@@ -10,7 +10,7 @@ var UserSchema = new mongoose.Schema({
 	headImg: String,
 	password: String,	//密码，后续做了哈希加密，存入数据库的是哈希后的值，防止数据库泄漏导致密码曝光
 	// 权限
-	// 0: normal user 登陆后的游客，可以发表和回复评论
+	// 0: normal user 登录后的游客，可以发表和回复评论
 	// 1: admin	系统管理员，可以增删改文章，可以发表和回复评论
 	role: {
 		type: Number,

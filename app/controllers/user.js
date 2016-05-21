@@ -11,7 +11,7 @@ exports.showSignup = function(req, res) {
 // signin page
 exports.showSignin = function(req, res) {
 	res.render('signin', {
-		title: '登陆页面'
+		title: '登录页面'
 	})
 }
 exports.signup = function(req, res){
