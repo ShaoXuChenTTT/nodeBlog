@@ -1,7 +1,7 @@
 {
   "name": "nodeBlog",
   "version": "1.0.0",
-  "description": "tzy's nodeBlog",
+  "description": "shaoxc's nodeBlog",
   "main": "app.js",
   "dependencies": {
     "bcrypt": "^0.8.5",
@@ -31,6 +31,6 @@
     "blog",
     "Nodejs"
   ],
-  "author": "tangzy",
+  "author": "shaoxc",
   "license": "ISC"
 }
