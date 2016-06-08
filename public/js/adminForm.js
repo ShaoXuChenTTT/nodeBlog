@@ -36,4 +36,20 @@ $(function() {
 	$(document).on('click', '.articleLabel i', function(){
 		deleteLabel($(this).parent(".articleLabel"))
 	})
+	var validate = function(){
+		if(!($("#inputTitle").val())){
+			alert("标题不能为空")
+			return false
+		}
+		else if(!($("#inputIntroduce").val())){
+			alert("简介不能为空")
+			return false
+		}
+		return true
+	}
+	$("#submitBtn").on('click',function(){
+		if(validate()){
+			$("#articleForm").submit()
+		}
+	})
 })

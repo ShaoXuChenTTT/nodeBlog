@@ -49,9 +49,10 @@ exports.signin = function(req ,res) {
 		if(err) {
 			console.log(err)
 		}
-
+		console.log("user" + user);
 		if(!user) {
 			res.json({status: 0, code: "FAILED", message: "user not exists", errorCode: "E_1002"})
+			return;
 			// return res.redirect('/signup')
 		}
 
@@ -67,6 +68,7 @@ exports.signin = function(req ,res) {
 			else {
 				res.json({status: 0, code: "FAILED", message: "user or password does not match", errorCode: "E_1003"})
 				// return res.redirect('/signin')
+				return;
 			}
 		})
 	})

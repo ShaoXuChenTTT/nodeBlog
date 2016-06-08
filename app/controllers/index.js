@@ -3,7 +3,7 @@ var Article = require('../models/article')
 var pageSize = 5
 // index page
 exports.index = function(req, res) {
-	var pageNum = req.query.page
+	var pageNum = parseInt(req.query.page)
 	if(!pageNum) {
 		pageNum = 1
 	}
@@ -21,6 +21,8 @@ exports.index = function(req, res) {
 			res.redirect('/')
 		}
 		var newArticles = articles.slice(0,8)
+		var prePageNum = pageNum - 1
+		var nextPageNum = pageNum + 1
 		Article.find({"recommend":true}).exec(function(err, recommendArticles) {
 			if (err) {
 				console.log(err)
@@ -32,7 +34,9 @@ exports.index = function(req, res) {
 				newArticles: newArticles,
 				reArticles: reArticles,
 				pageCount: pageCount,
-				pageNum: pageNum
+				pageNum: pageNum,
+				prePageNum: prePageNum,
+				nextPageNum: nextPageNum
 			})
 		})
 		

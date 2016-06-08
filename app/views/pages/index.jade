@@ -18,8 +18,8 @@ block content
 				ul.pager
 					li
 						if pageNum != 1
-							a(href="/?page=#{pageNum+1}") Prev
+							a(href="/?page=#{prePageNum}") Prev
 						= pageNum + ' / ' + pageCount
 						if pageNum < pageCount
-							a(href="/?page=#{pageNum+1}") Next
+							a(href="/?page=#{nextPageNum}") Next
 			include ../includes/rightBar
